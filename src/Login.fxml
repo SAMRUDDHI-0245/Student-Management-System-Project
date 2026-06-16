@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/17"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="LoginController"
+           stylesheets="@style.css">
+
+    <VBox alignment="CENTER">
+
+        <!-- BLUE HEADER -->
+        <Label text="🔐 Login" styleClass="header" prefWidth="400"/>
+
+        <!-- CARD -->
+        <VBox styleClass="card" spacing="20" alignment="CENTER" prefWidth="400">
+
+            <TextField fx:id="usernameField"
+           promptText="Username"
+           styleClass="login-field"/>
+
+            <PasswordField fx:id="passwordField"
+            promptText="Password"
+            styleClass="login-field"/>
+
+
+
+            <Button text="Login" onAction="#loginUser" />
+
+        </VBox>
+
+    </VBox>
+</StackPane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/17"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="DashboardController"
+           stylesheets="@style.css">
+
+    <VBox alignment="CENTER" spacing="0" prefWidth="600">
+
+        <!-- BLUE HEADER BAR -->
+        <Label text="🏠 Student Management System"
+               styleClass="header"
+               prefWidth="600"/>
+
+        <VBox spacing="25" alignment="CENTER" style="-fx-padding: 30;">
+
+            <!-- ADD STUDENT CARD -->
+            <Button text="➕  Add Student"
+                    onAction="#openAddStudent"
+                    styleClass="big-card"
+                    prefWidth="100"
+                    prefHeight="60"/>
+
+            <!-- VIEW STUDENTS CARD -->
+            <Button text="📄  View Students"
+                    onAction="#openViewStudents"
+                    styleClass="big-card"
+                    prefWidth="100"
+                    prefHeight="60"/>
+
+        
+
+            <!-- LOGOUT CARD -->
+            <Button text="🚪  Logout"
+                    onAction="#logout"
+                    styleClass="big-card"
+                    prefWidth="300"
+                    prefHeight="60"/>
+
+        </VBox>
+    </VBox>
+</StackPane>

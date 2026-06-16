@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/17"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="UpdateStudentController"
+           stylesheets="@style.css">
+
+    <VBox alignment="CENTER" spacing="15">
+
+        <Label text="Update Student Marks"
+               styleClass="header"
+               prefWidth="400"/>
+
+        <VBox styleClass="card" spacing="12" prefWidth="400">
+
+            <Label text="Roll Number"/>
+            <TextField fx:id="rollField" disable="true"/>
+
+            <Label text="Student Name"/>
+            <TextField fx:id="nameField" disable="true"/>
+
+            <Label text="Select Subject"/>
+            <ComboBox fx:id="subjectBox"/>
+
+            <Label text="Enter New Marks"/>
+            <TextField fx:id="marksField"/>
+
+            <Button text="Save Changes" onAction="#updateMarks"/>
+
+        </VBox>
+    </VBox>
+</StackPane>

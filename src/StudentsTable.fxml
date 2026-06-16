@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/17"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="StudentsController"
+           stylesheets="@style.css">
+
+    <VBox spacing="15" alignment="CENTER" prefWidth="900">
+
+        <!-- TOP BAR : BACK BUTTON + TITLE -->
+        <HBox spacing="10" alignment="CENTER_LEFT" prefWidth="900">
+            <Button text="⬅ Back" onAction="#goBack"/>
+
+            <Label text="All Students"
+                   styleClass="header"
+                   prefWidth="820"/>
+        </HBox>
+
+        <!-- SEARCH + REFRESH -->
+        <HBox spacing="10" alignment="CENTER_RIGHT" prefWidth="850">
+            <TextField fx:id="searchField"
+                       promptText="Search by name, roll or course..."
+                       prefWidth="300"/>
+            <Button text="🔄 Refresh" onAction="#loadData"/>
+        </HBox>
+
+        <!-- TABLE -->
+        <TableView fx:id="table" prefWidth="850" prefHeight="420">
+
+            <columns>
+                <TableColumn fx:id="colRoll" text="Roll" prefWidth="60"/>
+                <TableColumn fx:id="colName" text="Name" prefWidth="150"/>
+                <TableColumn fx:id="colAge" text="Age" prefWidth="60"/>
+                <TableColumn fx:id="colCourse" text="Course" prefWidth="140"/>
+
+                <TableColumn fx:id="colEnglish" text="English" prefWidth="80"/>
+                <TableColumn fx:id="colHindi" text="Hindi" prefWidth="80"/>
+                <TableColumn fx:id="colMath" text="Mathematics" prefWidth="110"/>
+                <TableColumn fx:id="colScience" text="Science" prefWidth="90"/>
+                <TableColumn fx:id="colSST" text="SST" prefWidth="70"/>
+
+                <TableColumn fx:id="colPercentage"
+                             text="Percentage (%)"
+                             prefWidth="130"/>
+            </columns>
+
+        </TableView>
+
+        <!-- ACTION BUTTONS -->
+        <HBox spacing="25" alignment="CENTER">
+            <Button text="✏ Update" onAction="#updateStudent"/>
+            <Button text="🗑 Delete" onAction="#deleteStudent"/>
+            
+
+        </HBox>
+
+    </VBox>
+</StackPane>

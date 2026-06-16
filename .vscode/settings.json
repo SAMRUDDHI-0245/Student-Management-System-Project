@@ -1,0 +1,27 @@
+{
+    "java.project.sourcePaths": [
+        "src"
+    ],
+    "java.configuration.runtimes": [
+    {
+        "name": "JavaSE-24",
+        "path": "C:\\Program Files\\Java\\jdk-24",
+        "default": true
+    }
+    ],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "c:\\Users\\samru\\Desktop\\JavaGUI\\FirstJavaApp\\lib\\javafx.controls.jar",
+        "c:\\Users\\samru\\Desktop\\JavaGUI\\FirstJavaApp\\lib\\javafx.swing.jar",
+        "c:\\Users\\samru\\Desktop\\JavaGUI\\FirstJavaApp\\lib\\jdk.jsobject.jar",
+        "c:\\Users\\samru\\Desktop\\JavaGUI\\FirstJavaApp\\lib\\javafx.media.jar",
+        "c:\\Users\\samru\\Desktop\\JavaGUI\\FirstJavaApp\\lib\\javafx.web.jar",
+        "c:\\Users\\samru\\Desktop\\JavaGUI\\FirstJavaApp\\lib\\javafx.fxml.jar",
+        "c:\\Users\\samru\\Desktop\\JavaGUI\\FirstJavaApp\\lib\\jfx.incubator.input.jar",
+        "c:\\Users\\samru\\Desktop\\JavaGUI\\FirstJavaApp\\lib\\javafx-swt.jar",
+        "c:\\Users\\samru\\Desktop\\JavaGUI\\FirstJavaApp\\lib\\javafx.base.jar",
+        "c:\\Users\\samru\\Desktop\\JavaGUI\\FirstJavaApp\\lib\\jfx.incubator.richtext.jar",
+        "c:\\Users\\samru\\Desktop\\JavaLib\\mysql-connector-j-9.5.0.jar",
+        "c:\\Users\\samru\\Desktop\\JavaGUI\\FirstJavaApp\\lib\\javafx.graphics.jar"
+    ]
+}
